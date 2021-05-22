@@ -1,7 +1,7 @@
 # Download base image ubuntu 18.04
 FROM ubuntu:latest
 
-MAINTAINER KARTHICK
+MAINTAINER GOPI G
 
 
 # sudo apt update
