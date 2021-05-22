@@ -1,0 +1,19 @@
+<html>
+<body bgcolor="#F6FC78">
+<p><center>DEDUPLICATION PROCESS RESULT</center></p>
+
+<form action="data" method="post">
+<input type="submit" name="submit" value="Download File">
+</form>
+
+{% block content %}
+<h1>{{name}}</h1>
+{{data | safe}}
+{% endblock %}
+
+<p><center> <a href="/save">Click to perform deduplication process again!!!!!....or terminate</a></center></p>
+
+
+
+</body>
+<html>

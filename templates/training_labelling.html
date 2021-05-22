@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body bgcolor="#33FFF6">
+<h1><center>Active Learning Process</center></h1><br>
+<h3>Note: Label the data whether it is similar or not..More Labelled data will give the best Result</h3>
+<h2>Do these records refer to same thing?</h2>
+
+ <form action="http://localhost:9895/training" method="POST">
+        {% for dict_item in data %}
+           {% for key, value in dict_item.items() %}
+                <table  width="400px" border="1"><tr>
+               <th  width="100px"> {{ key }} </th>
+               <td  width="300px"> {{ value }} </td>
+            </table>
+          {% endfor %}
+        {% endfor %}
+
+   <br> <input type="submit" style="height:30px;width:65px" name="optn" value="y"><span>Yes</span>
+    <input type="submit" style="height:30px;width:65px" name="optn" value="n"><span>No</span>
+    <input type="submit" style="height:30px;width:65px" name="optn" value="u"><span>Unsure</span>
+    <input type="submit" style="height:30px;width:65px" name="optn" value="f"><span>Finish</span>
+ </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% for dict_item in data %}
+   {% for key, value in dict_item.items() %}
+     <table border="1">
+         <tr>
+         <td>{{key}}:{{value}}</td> </tr>
+      </table>
+
+   {% endfor %}
+{% endfor %}
+
+
+

@@ -1,0 +1,12 @@
+<html>
+<body bgcolor="#18F3B4">
+<p><center>DISPLAYING THE RECORDS</center></p>
+<center> <a href="/field">Click for the NEXT STEP  </a></center></p>
+
+{% block content %}
+<h1>{{name}}</h1>
+{{data | safe}}
+{% endblock %}
+
+</body>
+<html>
